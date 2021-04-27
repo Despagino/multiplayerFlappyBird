@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100vw;
+    height:100vh; 
+}
+
+
+body {
+    background: url("https://wallpaperaccess.com/full/4622688.png");
+}
+
+#game {
+    width: 400px;
+    height:500px;
+    border: 1px solid black;
+    margin: auto;   
+    overflow: hidden;
+    background: url("https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png");
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game2 {
+    width: 400px;
+    height:500px;
+    border: 1px solid black;
+    margin: auto;   
+    overflow: hidden;
+    background: url("https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png");
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#block {
+ width: 50px;
+ height: 500px;
+ background-color: black;
+ position: relative;
+ left: 400px; 
+  animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 400px}
+    100%{left: -50px}
+}
+
+#block1 {
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+   }
+   
+ @keyframes block1 {
+       0%{left: 400px}
+       100%{left: -50px}
+   } 
+ #hole {
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -300px;
+    animation: block 2s infinite linear;
+} 
+
+#character {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 300px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+#hole1 {
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -300px;
+    animation: block 2s infinite linear;
+}
+
+#character1 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 300px;
+    border-radius: 50%;
+}
+
+
+
+#score {
+    font-weight: bolder;
+}
+
+#player1 {
+    font-size: 6rem;
+}
+
+#player2 {
+    font-size: 6rem;
+}
+#space {
+    font-size: 6rem;
+}
+
+#options {
+    display: flex;
+}
+
+#reset {
+    display: block;
+    text-align: center;
+    position: relative;
+    left:48%;
+    bottom: 300px;
+}
