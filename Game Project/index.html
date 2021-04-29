@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flappy Bird</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div id="game" onclick="jump()">
+        <div id="game">
             <div id="block"></div>
             <div id="hole"></div>
             <div id="character"></div>
@@ -22,17 +23,18 @@
         <h1 id="space">:</h1>
         <h1 id="player2">0</h1>
 
-
         <div id="game2">
             <div id="block1"></div>
             <div id="hole1"></div>
             <div id="character1"></div>
         </div>
     </main>
-    <!-- <button id="reset">Click to Reset</button>
-    <button id="playagain">Click until character is through the block</button> -->
+    <button id="reset" onclick="window.location.reload()">Click to Reset</button>
 
-    <script src="app.js"></script>
+
+
+
+
 </body>
 
 </html>

@@ -61,7 +61,7 @@ body {
     background-color: black;
     position: relative;
     left: 400px;
-    animation: block 2s infinite linear;
+    animation: block1 2s infinite linear;
    }
    
  @keyframes block1 {
@@ -79,7 +79,17 @@ body {
     background-color: white;
 } 
 
-#character{
+#hole1 {
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -300px;
+    animation: block1 2s infinite linear;
+}
+
+#character {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -88,15 +98,6 @@ body {
     background-color: brown;
     }
 
-#hole1 {
-    width: 50px;
-    height: 150px;
-    background-color: white;
-    position: relative;
-    left: 400px;
-    top: -300px;
-    animation: block 2s infinite linear;
-}
 
 #character1 {
     width: 20px;
@@ -106,7 +107,6 @@ body {
     top: 300px;
     border-radius: 50%;
 }
-
 
 
 #score {
@@ -124,9 +124,9 @@ body {
     font-size: 6rem;
 }
 
-#options {
-    display: flex;
-}
+
+
+
 
 #reset {
     display: block;
@@ -135,7 +135,8 @@ body {
     left:48%;
     bottom: 300px;
 }
-#playagain {
+
+/* #playagain {
     display: block;
     text-align: center;
     position: relative;
@@ -143,4 +144,4 @@ body {
     bottom: 280px;
     padding: 2px;
     
-}
+} */
