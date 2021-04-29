@@ -15,7 +15,7 @@ let counter1 = 0;
 
 // THE SPACE FOR THE CHARACTER TO GO THROUGH
 
-let flappyhit = new Audio('/Users/ginotasis/Desktop/Software Engineering/Game Project/multiplayerFlappyBird/flappyhit.mp3');
+let flappyhit = new Audio('/Users/ginotasis/Desktop/Software Engineering/Game Project/multiplayerFlappyBird/trash.mp3');
 var flappypoint = new Audio('/Users/ginotasis/Desktop/Software Engineering/Game Project/multiplayerFlappyBird/flappypoint.mp3')
 
 hole.addEventListener('animationiteration', () => {
@@ -91,17 +91,17 @@ var startGame1 = setInterval(() => {
 document.body.addEventListener('keydown', jump);
 
 function jump(e) {
-    if (e.keyCode === 70) { // f key to jump
-        jumping = 1; // signifies if "character" is jumping. True or false
-        jumpCount = 0; // counts how many times the interval is ran
+    if (e.keyCode === 70) {
+        jumping = 1;
+        jumpCount = 0;
 
-        let jumpInterval = setInterval(() => { //this will run every 10 seconds when the function is execeuted 
+        let jumpInterval = setInterval(() => {
             let characterTop =
-                parseInt(window.getComputedStyle(character).getPropertyValue("top")); // returns the numeric value pf the top style of character 
+                parseInt(window.getComputedStyle(character).getPropertyValue("top"));
             if ((characterTop > 223)) {
-                character.style.top = (characterTop - 4) + "px"; // for everytime that my character is not reaching the top of the box, I will make it jump 4 px
+                character.style.top = (characterTop - 4) + "px";
             }
-            if (jumpCount == 20) { // once we've hit 20 inervals we will need to stop the interval so that the character will continue back down again
+            if (jumpCount == 20) {
                 clearInterval(jumpInterval);
                 jumping = 0;
                 jumpCount = 0;
@@ -114,16 +114,18 @@ function jump(e) {
 document.body.addEventListener('keydown', jump1);
 
 function jump1(e) {
-    if (e.keyCode === 74) {
-        jumping1 = 1;
-        jumpCount1 = 0;
-        let jumpInterval1 = setInterval(() => {
+    if (e.keyCode === 74) { // j key to jump
+        jumping1 = 1; // signifies if "character" is jumping. True or false
+        jumpCount1 = 0; // counts how many times the interval is ran
+
+
+        let jumpInterval1 = setInterval(() => { //this will run every 10 milliseconds when the function is execeuted 
             let characterTop1 =
-                parseInt(window.getComputedStyle(character1).getPropertyValue("top"));
+                parseInt(window.getComputedStyle(character1).getPropertyValue("top")); // returns the numeric value pf the top style of character 
             if ((characterTop1 > 223)) {
-                character1.style.top = (characterTop1 - 4) + "px";
+                character1.style.top = (characterTop1 - 4) + "px"; // for everytime that my character is not reaching the top of the box, I will make it jump 4 px
             }
-            if (jumpCount1 == 20) {
+            if (jumpCount1 == 20) { // once we've hit 20 inervals we will need to stop the interval so that the character will continue back down agains
                 clearInterval(jumpInterval1);
                 jumping1 = 0;
                 jumpCount1 = 0;
