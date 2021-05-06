@@ -15,7 +15,7 @@ let counter1 = 0;
 
 // THE SPACE FOR THE CHARACTER TO GO THROUGH
 
-let flappyhit = new Audio('/Users/ginotasis/Desktop/Software Engineering/Game Project/multiplayerFlappyBird/trash.mp3');
+let flappyhit = new Audio('//Users/ginotasis/Desktop/Software Engineering/Game Project/multiplayerFlappyBird/flappyhit.mp3');
 var flappypoint = new Audio('/Users/ginotasis/Desktop/Software Engineering/Game Project/multiplayerFlappyBird/flappypoint.mp3')
 
 hole.addEventListener('animationiteration', () => {
@@ -49,12 +49,12 @@ var startGame = setInterval(() => {
     if ((characterTop > 700) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
         block.style.animationPlayState = 'paused';
         hole.style.animationPlayState = 'paused';
-        flappyhit.play()
         clearInterval(startGame);
         if (counter > counter1) {
             player1.style.color = 'green';
             player2.style.color = 'red'
         }
+        flappyhit.play()
     }
 }, 10)
 
@@ -78,6 +78,7 @@ var startGame1 = setInterval(() => {
             player2.style.color = 'green';
             player1.style.color = 'red'
         }
+        flappyhit.play()
     }
 }, 10)
 
